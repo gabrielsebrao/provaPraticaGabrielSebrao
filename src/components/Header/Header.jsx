@@ -1,10 +1,11 @@
 import React from "react";
+import './Header.css'
 
 export default function Header() {
     return (
-        <header>
+        <header className="Header">
             <img src='./logo-senai.png'/>
-            <h1>Gabriel de Oliveira Sebrão - 3B</h1>
+            <p>Gabriel de Oliveira Sebrão - 3B</p>
         </header>
     )
 }

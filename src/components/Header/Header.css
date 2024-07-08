@@ -1,0 +1,26 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    background-color: rgb(214, 205, 205);
+    padding: 20px;
+}
+
+.Header img {
+    width: 200px;
+}
+
+.Header p {
+    height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .Header img {
+        width: 100px;
+    }
+
+    .Header p {
+        font-size: 10px;
+    }
+}
