@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './Clubs.css'
 
 export default function Clubs() {
     const [clubes, setClubes] = useState([]);
@@ -20,12 +21,12 @@ export default function Clubs() {
     }, []);
 
     return (
-        <div>
+        <div className="Clubs">
             {erro && <p>Ocorreu um erro: {erro.message}</p>}
             <ul>
             {clubes.slice(1).map((clube) => (
                     <li key={clube.id}>
-                    <div>
+                    <div className="clubsItems">
                         <img
                             src={clube.escudos['60x60']}
                             alt={`${clube.nome} logo`}
